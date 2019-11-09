@@ -9,4 +9,4 @@ $(DOC).pdf:	*.tex
 	done
 
 clean:
-	rm -r $(DOC).aux $(DOC).bbl $(DOC).blg $(DOC).log $(DOC).out $(DOC).pdf $(DOC).toc
+	rm -f $(DOC).aux $(DOC).log $(DOC).out $(DOC).pdf $(DOC).toc $(DOC).nav $(DOC).snm
