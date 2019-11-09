@@ -1,20 +1,20 @@
-\documentclass[titlepage, 12pt, a4paper, oneside]{book}
+\documentclass[titlepage, 12pt, a4paper]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish, es-tabla]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 %\usepackage[numbib]{tocbibind}
 \usepackage{tikz}
-\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=1.1cm]{geometry}
 \usepackage{xcolor}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}
-\rhead{\textit{\color[rgb]{0.0,0.424,0.616}Nombre del estudiante}}
-\lhead{}
-\rfoot{}
-\renewcommand{\headrulewidth}{0pt}
+%\fancyhf{}
+%\rhead{\textit{\color[rgb]{0.0,0.424,0.616}Nombre del estudiante}}
+%\lhead{}
+%\rfoot{}
+%\renewcommand{\headrulewidth}{0pt}
 
 \usepackage{afterpage}
 \usepackage{lipsum}
@@ -42,18 +42,17 @@
   }
   
   \vspace{7.5cm}
-  \hspace{1.75cm}\resizebox{8cm}{!}{\textbf{Curso 2019/2020}}
+  \hspace{2cm}\resizebox{8cm}{!}{\textbf{Curso 2019/2020}}
   
   \vspace{0.7cm}
-  \hspace{5.5cm}\resizebox{7cm}{!}{\textbf{Nombre del estudiante}}
+  \hspace{6cm}\resizebox{7cm}{!}{\textbf{Nombre del estudiante}}
   
   \vspace{1.8cm}
-  \hspace{9.5cm}\resizebox{7cm}{!}{\textbf{Vicente González Ruiz}}
+  \hspace{10.1cm}\resizebox{7cm}{!}{\textbf{Vicente González Ruiz}}
   
-  \clearpage
+  %\clearpage
   \restoregeometry
 }
-
 
 \maketitle
 
@@ -69,7 +68,7 @@
 \addcontentsline{toc}{chapter}{Bibliografía}
 \bibliography{../bibliografia}
 
-\newgeometry{top=1.0in, left=1.0in}
+\newgeometry{top=1.0in, left=0.6in, width=15.5cm}
      
 \thispagestyle{empty}
 \tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{TFM_TAII_back}};
