@@ -10,6 +10,7 @@
 \usepackage{tikz}
 \usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
 \usepackage{xcolor}
+\usepackage{eso-pic}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -27,7 +28,7 @@
 
 \begin{document}
 \thispagestyle{empty}
-\tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{Plantilla_AnteProyectoTFM-portada}};
+\tikz[remember picture,overlay] \node[opacity=1.0, inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{Plantilla_AnteProyectoTFM-portada}};
 
 \begin{center}
   \vspace{6cm}
@@ -69,7 +70,7 @@
 
 \clearpage
 
-\tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{Plantilla_AnteProyectoTFM-paginas}};
+\AddToShipoutPictureBG{\tikz[remember picture, overlay] \node[opacity=1.0,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{Plantilla_AnteProyectoTFM-paginas}};}
 
 \normalsize
 
@@ -127,6 +128,8 @@ En esta sección se comentarán los diferentes materiales o herramientas y méto
 
 \bibliographystyle{plain}
 \bibliography{../bibliografia}
+
+\vspace{5ex}
 
 \begin{center}
   \textbf{Firmas de los tutores}
